@@ -1,10 +1,12 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    margin: 0; 
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body, html {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: 80%; */
     text-align: center;
     background: linear-gradient(salmon, #9313ef);
 }
@@ -13,76 +15,143 @@ header {
     text-align: center;
 }
 
-.tree,
-.tree ul,
-.tree li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-.tree {
-    margin: 0 0 1em;
-    text-align: center;
-}
-.tree,
 .tree ul {
-    display: table;
+	padding-top: 20px; position: relative;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 }
-.tree ul {
-    width: 100%;
-}
+
 .tree li {
-    display: table-cell;
-    padding: .5em 0;
-    vertical-align: top;
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 }
-.tree li:before {
-    outline: solid 1px #666;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
 }
-.tree li:first-child:before {
-    left: 50%;
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
 }
-.tree li:last-child:before {
-    right: 50%;
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
 }
-.tree code,
-.tree span {
-    border: solid .1em #666;
-    border-radius: 5.2em;
-    display: inline-block;
-    margin: 0 .2em .5em;
-    padding: .2em 1.0em;
-    position: relative;
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	display: inline-block;
     background-color: cyan;
+	
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 }
-.tree ul:before,
-.tree code:before,
-.tree span:before {
-    outline: solid 1px #666;
+
+.tree li div{
+	color: black;
+    font-size: 18px;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a{
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
+.mainSearch {
+margin: 0 50px;
+}
+
+/* Style the search field */
+form.mainSearch input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.mainSearch button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.mainSearch button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.mainSearch::after {
     content: "";
-    height: .5em;
-    left: 50%;
-    position: absolute;
-}
-.tree ul:before {
-    top: -.5em;
-}
-.tree code:before,
-.tree span:before {
-    top: -.55em;
-}
-.tree>li {
-    margin-top: 0;
-}
-.tree>li:before,
-.tree>li:after,
-.tree>li>code:before,
-.tree>li>span:before {
-    outline: none;
-}
+    clear: both;
+    display: table;
+  }
