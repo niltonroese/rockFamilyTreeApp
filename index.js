@@ -4,43 +4,15 @@ function artistLink(url){
     window.open(url);
 }
 
-/*Genre Buttons*/
+/*Search Button*/
 
-  function Jazz(){
-    const x = document.getElementById("JazzOverview");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+document.getElementById('search-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const band = document.getElementById('band-input').value
+  // console.log(band);
 
-  function Blues(){
-    const x = document.getElementById("BluesOverview");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-  function RandB(){
-    const x = document.getElementById("RandBOverview");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-  function Folk(){
-    const x = document.getElementById("FolkOverview");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+  window.open('https://google.com', '_blank');
+})
 
 /*API Fetch*/
 
@@ -95,12 +67,220 @@ async function BobD(){
 //     }
 // }
 
-/*Search Button*/
+/*Genre Buttons*/
 
-document.getElementById('search-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const band = document.getElementById('band-input').value
-    // console.log(band);
+  // function jazz(); blues(); randB(); folk(); {
+  //   const x = document.querySelectorAll("#jazzOverview, #bluesOverview, #randBOverview, #folkOverview");
+  //   if (x.style.display === "none") {
+  //     x.style.display = "block";
+  //   } else {
+  //     x.style.display = "none";
+  //   }
+  // }
 
-    window.open('https://google.com', '_blank');
-})
+  function blues(){
+    const x = document.getElementById("bluesOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function randB(){
+    const x = document.getElementById("randBOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function folk(){
+    const x = document.getElementById("folkOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function folkRock(){
+    const x = document.getElementById("folkRockOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function rockabilly(){
+    const x = document.getElementById("rockabillyOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function britInvasion(){
+    const x = document.getElementById("britInvasionOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function soul(){
+    const x = document.getElementById("soulOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function psychedelicRock(){
+    const x = document.getElementById("psychedelicOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function progRock(){
+    const x = document.getElementById("progRockOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function experimentalRock(){
+    const x = document.getElementById("experimentalOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function southernRock(){
+    const x = document.getElementById("southernOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function glitterRock(){
+    const x = document.getElementById("glitterOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function hardRock(){
+    const x = document.getElementById("hardRockOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function punk(){
+    const x = document.getElementById("punkOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function grunge(){
+    const x = document.getElementById("grungeOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function heavyMetal(){
+    const x = document.getElementById("heavyMetalOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function popRock(){
+    const x = document.getElementById("popRockOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function newWave(){
+    const x = document.getElementById("newWaveOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function dooWop(){
+    const x = document.getElementById("dooWopOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function funk(){
+    const x = document.getElementById("funkOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function disco(){
+    const x = document.getElementById("discoOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function rap(){
+    const x = document.getElementById("rapOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function hiphop(){
+    const x = document.getElementById("hiphopOverview");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }

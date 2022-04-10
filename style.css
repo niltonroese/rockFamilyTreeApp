@@ -147,7 +147,7 @@ right connector from last child*/
 } */
 
 .mainSearch {
-	margin: 0 10%
+	margin: 0 15%
 }
 
 /* Style the search field */
@@ -156,14 +156,14 @@ form.mainSearch input[type=text] {
 	font-size: 17px;
 	border: 1px solid grey;
 	float: left;
-	width: 80%;
+	width: 70%;
 	background: #f1f1f1;
 }
 
 /* Style the submit button */
 form.mainSearch button {
 	float: left;
-	width: 10%;
+	width: 15%;
 	padding: 10px;
 	background: #2196F3;
 	color: white;
@@ -185,11 +185,16 @@ form.mainSearch::after {
 	display: table;
 }
 
-#RandBOverview, #FolkOverview, #JazzOverview, #BluesOverview {
+#jazzOverview, #bluesOverview, #randBOverview, #folkOverview, #folkRockOverview, 
+#rockabillyOverview, #britInvasionOverview, #soulOverview, #psychedelicOverview, 
+#progRockOverview, #experimentalOverview, #southernOverview, #glitterOverview, 
+#hardRockOverview, #punkOverview, #grungeOverview, #heavyMetalOverview, #popRockOverview,
+#newWaveOverview, #dooWopOverview, #funkOverview, #discoOverview, #rapOverview, #hiphopOverview {
 	width: 100%;
 	padding: 10px 0;
 	text-align: center;
-	background-color: lightblue;
+	background-color: rgba(0, 0, 0, 0.432);
+	color: white;
 	margin: 5px 0 5px 0;
 	border-radius: 10px 0 10px 0;
 	display: none;
