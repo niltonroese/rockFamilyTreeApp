@@ -22,7 +22,7 @@
 <body>
     <div class="tree">
         <ul>
-            <li> <a onclick="jazz()" >Jazz</a>
+            <li> <a onclick="musicGenre('jazzOverview')" >Jazz</a>
                 <p id="jazzOverview">Jazz is music performed by an ensemble of players, each (very) specialized and proficient in their respective instrument. The usual Jazz instruments are: trumpets, saxophones, clarinets, trombones, string-bass, and piano alongside drums and a jazz-guitar. The interaction between these players is crucial. Compared to Rock or Blues, Jazz musicians follow no completely predetermined scores. They have to “feel” what the others are about to play and how the music will evolve.</p>
                 <div onclick="artistLink('https://www.natkingcole.com/')">Nat King Cole</div>
                 <div onclick="artistLink('https://www.milesdavis.com/')">Miles Davis</div>
@@ -30,7 +30,7 @@
                 <div onclick="artistLink('https://www.marylouwilliams.foundation/')">Mary Lou Williams</div>
                 <div onclick="artistLink('https://www.keithjarrett.org/')">Keith Jarrett</div>
                 <ul>
-                    <li> <a onclick="blues()" >Blues</a>
+                    <li> <a onclick="musicGenre('bluesOverview')" >Blues</a>
                         <p id="bluesOverview">Blues is almost as old as popular music itself. Its rich history streams through various genres, just like the Mississippi river carried musicians from Minneapolis to southern New Orleans. At first, Blues was dominantly associated with anything vice; it was regarded as the song of outlaws and criminals. But Blues must rather be seen as an outlet or cry for the people on the border of society: the poor, blind, unfortunate and particularly, the black.</p> 
                         <div onclick="artistLink('https://robertjohnsonbluesfoundation.org/')">Robert Johnson</div>
                         <div onclick="artistLink('https://www.mswritersandmusicians.com/mississippi-musicians/son-house')">Son House</div>
@@ -38,7 +38,7 @@
                         <div onclick="artistLink('https://en.wikipedia.org/wiki/Muddy_Waters')">Muddy Waters</div>
                         <div onclick="artistLink('https://www.bbking.com/')">B.B. King</div>
                         <ul>
-                            <li> <a onclick="randB()" >R&B</a> 
+                            <li> <a onclick="musicGenre('randBOverview')" >R&B</a> 
                                 <p id="randBOverview">Like the name implies, Rhythm & Blues (“R&B” or “RnB”) is the powerful combination of two old music genres. Gospel (the Rhythm) on one hand, which provides an infectious groovy tempo that was already noticeable in its early barbershop days with handclapping and rhythmical vibrating voices. Blues on the other hand, which delivers warm chords and rich bass. “Gospel & Blues” combines diverse musical elements and is therefore a highly flexible hybrid genre, forming a bridge between many super-genres.</p>
                                 <div onclick="artistLink('https://www.fatsdominoofficial.com/')">Fats Domino</div>
                                 <div onclick="artistLink('https://en.wikipedia.org/wiki/Little_Richard')">Little Richard</div>
@@ -46,25 +46,23 @@
                                 <div onclick="artistLink('https://raycharles.com/')">Ray Charles</div>
                                 <div onclick="artistLink('https://www.bodiddley.com/')">Bo Diddley</div>
                                 <ul>
-                                    <li> <a onclick="folk()" >Folk</a>
+                                    <li> <a onclick="musicGenre('folkOverview')" >Folk</a>
                                         <p id="folkOverview">Folk music is a music genre that includes traditional folk music and the contemporary genre that evolved from the former during the 20th-century folk revival. Some types of folk music may be called world music. Traditional folk music has been defined in several ways: as music transmitted orally, music with unknown composers, music about cultural or national identity, music that changes between generations (folk process), music associated with a people's folklore, or music performed by custom over a long period of time.</p>
-                                        <div id="bobDylanContainer">
-                                            <div onclick="BobD()">Bod Dylan</div>
-                                        </div>
-                                        <div onclick="KingstonTrio()" >Kingston Trio</div>
+                                        <div onclick="artistLink('https://www.bobdylan.com/')">Bod Dylan</div>
+                                        <div onclick="artistLink('https://www.kingstontrio.com/')">Kingston Trio</div>
                                         <div onclick="artistLink('http://www.joanbaez.com/')">John Baez</div>
                                         <div onclick="artistLink('https://peterpaulandmary.com/')">Peter Paul & Mary</div>
                                         <ul>
-                                            <li> <a onclick="folkRock()" >Folk Rock</a>
+                                            <li> <a onclick="musicGenre('folkRockOverview')" >Folk Rock</a>
                                                 <p id="folkRockOverview">Folk rock is a hybrid music genre that combines the elements of folk and rock music, which arose in the United States, Canada, and the United Kingdom in the mid-1960s. In the U.S., folk rock emerged from the folk music revival and the influence that the Beatles and other British Invasion bands had on members of that movement.</p>
                                                 <div onclick="artistLink('https://www.vanmorrison.com/')">Van Morrison</div>
                                                 <div onclick="artistLink('https://en.wikipedia.org/wiki/Creedence_Clearwater_Revival')">Creedence Clearwater Revival</div>
                                                 <div onclick="artistLink('https://simonandgarfunkel.com/')">Simon & Garfunkel</div>
-                                                <div onclick="artistLink('https://neilyoungarchives.com/')">Neil Young</div>
+                                                <div onclick="neilYoung()">Neil Young</div>
                                                 <div onclick="artistLink('https://en.wikipedia.org/wiki/Crosby,_Stills,_Nash_%26_Young')">Crosby, Stills & Nash</div>
                                         </ul>
                                     </li>
-                                    <li> <a onclick="rockabilly()" >Rockabilly</a>
+                                    <li> <a onclick="musicGenre('rockabillyOverview')" >Rockabilly</a>
                                         <p id="rockabillyOverview">Rockabilly is one of the earliest styles of rock and roll music. It dates back to the early 1950s in the United States, especially the South. As a genre it blends the sound of Western musical styles such as country with that of rhythm and blues, leading to what is considered "classic" rock and roll. Some have also described it as a blend of bluegrass with rock and roll.</p>
                                         <div onclick="artistLink('https://sunrecords.com/artists/carl-perkins/')">Carl Perkins</div>
                                         <div onclick="artistLink('https://www.elvisthemusic.com/')">Elvis</div>
@@ -72,7 +70,7 @@
                                         <div onclick="artistLink('https://www.buddyholly.com/')">Buddy Holly</div>
                                         <div onclick="artistLink('https://royorbison.com/')">Roy Orbison</div>
                                         <ul>
-                                            <li> <a onclick="britInvasion()" >Brit Invasion</a>
+                                            <li> <a onclick="musicGenre('britInvasionOverview')" >Brit Invasion</a>
                                                 <p id="britInvasionOverview">The British Invasion was a cultural phenomenon of the mid-1960s, when rock and pop music acts from the United Kingdom and other aspects of British culture became popular in the U.S. and significant to the rising "counterculture" on both sides of the Atlantic Ocean.</p>
                                                 <div onclick="artistLink('https://www.thebeatles.com/')">The Beatles</div>
                                                 <div onclick="artistLink('https://rollingstones.com/')">The Rolling Stones</div>
@@ -80,7 +78,7 @@
                                                 <div onclick="artistLink('http://www.theyardbirds.com/')">The Yardbirds</div>
                                                 <div onclick="artistLink('https://www.musicofcream.com/')">Cream</div>
                                                 <ul>
-                                                    <li> <a onclick="soul()" >Soul</a>
+                                                    <li> <a onclick="musicGenre('soulOverview')" >Soul</a>
                                                         <p id="soulOverview">Soul music (often referred to simply as soul) is a popular music genre that originated in the African American community throughout the United States in the 1950s and early 1960s. It combines elements of African-American gospel music, rhythm and blues and jazz.</p>
                                                         <div onclick="artistLink('https://janisjoplin.com/')">Janis Joplin</div>
                                                         <div onclick="artistLink('https://otisredding.com/')">Otis Redding</div>
@@ -88,7 +86,7 @@
                                                         <div onclick="artistLink('http://www.jamesbrown.com/')">James Brown</div>
                                                         <div onclick="artistLink('https://www.arethafranklin.net/')">Aretha Franklin</div>
                                                         <ul>
-                                                            <li> <a onclick="psychedelicRock()" >Psychedelic Rock</a>
+                                                            <li> <a onclick="musicGenre('psychedelicOverview')" >Psychedelic Rock</a>
                                                                 <p id="psychedelicOverview">Psychedelic rock is a rock music genre that is inspired, influenced, or representative of psychedelic culture, which is centered on perception-altering hallucinogenic drugs. The music incorporated new electronic sound effects and recording effects, extended solos, and improvisation.</p>
                                                                 <div onclick="artistLink('https://thedoors.com/')">The Doors</div>
                                                                 <div onclick="artistLink('https://jeffersonairplane.com/')">Jefferson Airplane</div>
@@ -96,7 +94,7 @@
                                                                 <div onclick="artistLink('https://www.velvetundergroundmusic.com/')">Velvet Underground</div>
                                                                 <div onclick="artistLink('https://www.dead.net/')">Grateful Dead</div>
                                                                 <ul>
-                                                                    <li><a onclick="progRock()" >Prog Rock</a>
+                                                                    <li><a onclick="musicGenre('progRockOverview')" >Prog Rock</a>
                                                                         <p id="progRockOverview">Progressive rock (shortened as prog rock or simply prog) is a broad genre of rock music that developed in the United Kingdom and United States throughout the mid-to late 1960s, peaking in the early 1970s. Prog is based on fusions of styles, approaches and genres, involving a continuous move between formalism and eclecticism.</p>
                                                                         <div onclick="artistLink('http://yesworld.com/')">Yes</div>
                                                                         <div onclick="artistLink('https://www.pinkfloyd.com/')">Pink Floyd</div>
@@ -104,7 +102,7 @@
                                                                         <div onclick="artistLink('https://www.dgmlive.com/')">King Crimson</div>
                                                                         <div onclick="artistLink('https://www.emersonlakepalmer.com/')">ELP</div>
                                                                         <ul>
-                                                                            <li><a onclick="experimentalRock()" >Experimental Rock</a>
+                                                                            <li><a onclick="musicGenre('experimentalOverview')" >Experimental Rock</a>
                                                                                 <p id="experimentalOverview">Experimental rock, also called avant-rock, is a subgenre of rock music that pushes the boundaries of common composition and performance technique or which experiments with the basic elements of the genre. Artists aim to liberate and innovate, with some of the genre's distinguishing characteristics being improvisational performances, avant-garde influences, odd instrumentation, unorthodox structures and rhythms, and an underlying rejection of commercial aspirations.</p>
                                                                                 <div onclick="artistLink('https://www.zappa.com/')">Frank Zappa</div>
                                                                                 <div onclick="artistLink('https://www.spoonrecords.com/')">Can</div>
@@ -113,7 +111,7 @@
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li><a onclick="southernRock()" >Southern Rock</a>
+                                                                    <li><a onclick="musicGenre('southernOverview')" >Southern Rock</a>
                                                                         <p id="southernOverview">Southern Rock has developed in the southern states of the US and it stresses will of pride, glory and freedom. This fusion genre is patriotic to the bone: southern American Blues (Delta) meets southern American Country (Outlaw) meets American Rock (Rock 'n' Roll). Southern Rock is distinguishable by being raw and loud. It is the celebration and adoration of electric (Blues slide) guitars by having multiple lead guitars playing (often improvised) solos whenever they're not used for some heavy boogie jamming.</p>
                                                                         <div onclick="artistLink('https://allmanbrothersband.com/')">Allman Brothers</div>
                                                                         <div onclick="artistLink('https://lynyrdskynyrd.com/')">Lynyrd Skynyrd</div>
@@ -121,14 +119,14 @@
                                                                         <div onclick="artistLink('https://www.littlefeat.net/')">Little Feat</div>
                                                                         <div onclick="artistLink('https://nitetripper.com/')">Dr. John</div>
                                                                     </li>
-                                                                    <li><a onclick="glitterRock()" >Glitter/Glam</a>
+                                                                    <li><a onclick="musicGenre('glitterOverview')" >Glitter/Glam</a>
                                                                         <p id="glitterOverview">Glitter/Glam rock is a style of rock music that developed in the United Kingdom in the early 1970s and was performed by musicians who wore outrageous costumes, makeup, and hairstyles, particularly platform shoes and glitter. The flamboyant clothing and visual styles of performers were often camp or androgynous, and have been described as playing with other gender roles.</p>
                                                                         <div onclick="artistLink('https://www.davidbowie.com/')">David Bowie</div>
                                                                         <div onclick="artistLink('https://alicecooper.com/')">Alice Cooper</div>
                                                                         <div onclick="artistLink('https://www.t-rex.co.uk/')">T. Rex</div>
                                                                         <div onclick="artistLink('https://www.roxymusic.co.uk/')">Roxy Music</div>
                                                                     </li>
-                                                                    <li><a onclick="hardRock()" >Hard Rock</a>
+                                                                    <li><a onclick="musicGenre('hardRockOverview')" >Hard Rock</a>
                                                                         <p id="hardRockOverview">Hard rock is a loosely defined subgenre of rock music typified by a heavy use of aggressive vocals, distorted electric guitars, bass guitar, and drums, sometimes accompanied with keyboards. Hard Rock also introduced one of the most quintessential Rock elements: the “Riff”. Riffs are short unique melodies, often repetitive and a recognizable trademark of many Rock anthems.</p>
                                                                         <div onclick="artistLink('https://www.thewho.com/')">The Who</div>
                                                                         <div onclick="artistLink('https://www.ledzeppelin.com/?frontpage=true')">Led Zeppelin</div>
@@ -136,7 +134,7 @@
                                                                         <div onclick="artistLink('https://deeppurple.com/')">Deep Purple</div>
                                                                         <div onclick="artistLink('https://www.acdc.com/')">AC/DC</div>
                                                                         <ul>
-                                                                            <li><a onclick="punk()" >Punk</a>
+                                                                            <li><a onclick="musicGenre('punkOverview')" >Punk</a>
                                                                                 <p id="punkOverview">Punk rock is a music genre that goes back beyond the seventies: the concept of short, energetic songs, with powerful riffs and the so called “power chords”. Punk bands rejected the perceived excesses of mainstream 1970s rock. Punk embraces a DIY ethic; many bands self-produce recordings and distribute them through independent record labels</p>
                                                                                 <div onclick="artistLink('https://www.sexpistolsofficial.com/')">Sex Pistols</div>
                                                                                 <div onclick="artistLink('https://www.joeyramone.com/')">Ramones</div>
@@ -144,7 +142,7 @@
                                                                                 <div onclick="artistLink('https://www.pattismith.net/')">Patti Smith</div>
                                                                                 <div onclick="artistLink('http://www.richardhell.com/')">Richard Hell</div>
                                                                             </li>
-                                                                            <li><a onclick="grunge()" >Grunge</a>
+                                                                            <li><a onclick="musicGenre('grungeOverview')" >Grunge</a>
                                                                                 <p id="grungeOverview">Grunge is an alternative rock genre and subculture that emerged during the mid-1980s in the American Pacific Northwest state of Washington, particularly in Seattle and nearby towns. Grunge fuses elements of punk rock and heavy metal, but without punk's structure and speed. The genre featured the distorted electric guitar sound used in both genres, although some bands performed with more emphasis on one or the other.</p>
                                                                                 <div onclick="artistLink('https://www.nirvana.com/')">Nirvana</div>
                                                                                 <div onclick="artistLink('https://pearljam.com/')">Pearl Jam</div>
@@ -152,7 +150,7 @@
                                                                                 <div onclick="artistLink('https://www.soundgardenworld.com/')">Soundgarden</div>
                                                                                 <div onclick="artistLink('https://aliceinchains.com/music/')">Alice In Chains</div>
                                                                             </li>
-                                                                            <li><a onclick="heavyMetal()" >Heavy Metal</a>
+                                                                            <li><a onclick="musicGenre('heavyMetalOverview')" >Heavy Metal</a>
                                                                                 <p id="heavyMetalOverview">Heavy metal is a genre of rock music that developed in the late 1960s and early 1970s, largely in the United Kingdom and United States. The term “Heavy Metal” describes well the two cornerstone aspects of the genre. It is heavy due to more amplification and distortion than Rock and it is also very “metallic”. Heavy Metal is an overcharged engineer among genres, with highly technical unique elements such as blast beats, double bass drums, 12 string bass, lightning guitar solos and difficult voice techniques.</p>
                                                                                 <div onclick="artistLink('https://imotorhead.com/')">Motorhead</div>
                                                                                 <div onclick="artistLink('https://www.blacksabbath.com/')">Black Sabbath</div>
@@ -166,7 +164,7 @@
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li> <a onclick="popRock()" >Pop Rock</a>
+                                                    <li> <a onclick="musicGenre('popRockOverview')" >Pop Rock</a>
                                                         <p id="popRockOverview">Pop rock is a rock music genre with a greater emphasis on professional songwriting and recording craft, and less emphasis on attitude. Originating in the late 1950s as an alternative to normal rock and roll, early pop rock was influenced by the beat, arrangements, and original style of rock and roll. It may be viewed as a distinct genre field rather than music that overlaps with pop and rock. The detractors of pop rock often deride it as a slick, commercial product and less authentic than rock music.</p>
                                                         <div onclick="artistLink('https://www.gogos.com/')">The Go-Go's</div>
                                                         <div onclick="artistLink('https://www.fleetwoodmac.com/')">Fleetwood Mac</div>
@@ -174,7 +172,7 @@
                                                         <div onclick="artistLink('https://www.eltonjohn.com/')">Elton John</div>
                                                         <div onclick="artistLink('https://www.neildiamond.com/')">Neil Diamond</div>
                                                         <ul>
-                                                            <li><a onclick="newWave()" >New Wave</a>
+                                                            <li><a onclick="musicGenre('newWaveOverview')" >New Wave</a>
                                                                 <p id="newWaveOverview">New wave is a loosely defined music genre that encompasses numerous pop-oriented styles from the late 1970s and the 1980s. It was originally used as a catch-all for the various styles of music that emerged after punk rock, including punk itself. Common characteristics of new wave music include a humorous or quirky pop approach, the use of electronic sounds, and a distinctive visual style in music videos and fashion.</p>
                                                                 <div onclick="artistLink('http://davidbyrne.com/')">Talking Heads</div>
                                                                 <div onclick="artistLink('https://thepretenders.com/')">Pretenders</div>
@@ -188,14 +186,14 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li> <a onclick="dooWop()" >Doo Wop</a>
+                                    <li> <a onclick="musicGenre('dooWopOverview')" >Doo Wop</a>
                                         <p id="dooWopOverview">Doo Wop is a genre of rhythm and blues music that originated among African-American youth in the 1940s. Doo Wop is an often neglected, but familiar and characteristic genre. It's being performed by girl or boy groups that sing in vocal harmony: one person sings lyrics while the others perform backing vocals in a polyphonic symphony of gibberish and mumbling, humming sounds or onomatopoeias (like “Doo Wop”, hence the name).</p>
                                         <div onclick="artistLink('https://theplatters.com/')">The Platters</div>
                                         <div onclick="artistLink('https://theoriginalcoasters.net/')">The Coasters</div>
                                         <div onclick="artistLink('https://www.originaldrifters.com/')">The Drifters</div>
                                         <div onclick="artistLink('http://www.temptationsofficial.com/')">The Temptations</div>
                                         <ul>
-                                            <li> <a onclick="funk()" >Funk</a>
+                                            <li> <a onclick="musicGenre('funkOverview')" >Funk</a>
                                                 <p id="funkOverview">Funk music is an amalgam of soul music, soul jazz, R&B, and Afro-Cuban rhythms absorbed and reconstituted in New Orleans. Funk places strong emphasis on the first beat of each bar while the rest of the rhythm constantly changes, like an early form of breakbeat. This is known as “The Rhythm of the One” (the one beat, instead of four or two). Instruments such percussion, bass and accents on synth/piano work together to enhance this feeling creating the so called “the groove”: the pulsing force behind each Funk song.</p>
                                                 <div onclick="artistLink('https://georgeclinton.com/bio/')">Parliament-Funkadelic</div>
                                                 <div onclick="artistLink('http://www.confunkshunusa.com/')">Con Funk Shun</div>
@@ -203,14 +201,14 @@
                                                 <div onclick="artistLink('https://officialisleybrothers.com/')">Isley Brothers</div>
                                                 <div onclick="artistLink('https://www.rickjames.com/')">Rick James</div>
                                                 <ul>
-                                                    <li> <a onclick="disco()" >Disco</a>
+                                                    <li> <a onclick="musicGenre('discoOverview')" >Disco</a>
                                                         <p id="discoOverview">Disco is a genre of dance music and a subculture that emerged in the 1970s from the United States' urban nightlife scene. Its sound is typified by four-on-the-floor beats, syncopated basslines, string sections, horns, electric piano, synthesizers, and electric rhythm guitars.</p>
                                                         <div onclick="artistLink('https://www.beegees.com/')">Bee Gees</div>
                                                         <div onclick="artistLink('https://villagepeople.com/')">The Village People</div>
                                                         <div onclick="artistLink('https://donnasummer.com/')">Donna Summer</div>
                                                         <div onclick="artistLink('https://www.heykcsb.com/')">KC & The Sunshine Band</div>
                                                         <ul>
-                                                            <li> <a onclick="rap()" >Rap</a>
+                                                            <li> <a onclick="musicGenre('rapOverview')" >Rap</a>
                                                                 <p id="rapOverview">Rap is a musical genre of American origin characterized by the use of vocal rhymes. Rap music has become by far the most celebrated expression of hip hop culture, largely as a result of its being the easiest to market to a mass audience.</p>
                                                                 <div onclick="artistLink('https://www.drdre.com/')">Dr. Dre</div>
                                                                 <div onclick="artistLink('https://www.publicenemy.com/')">Public Enemy</div>
@@ -218,7 +216,7 @@
                                                                 <div onclick="artistLink('http://beastieboys.com/')">Beastie Boys</div>
                                                                 <div onclick="artistLink('https://snoopdogg.com/')">Snoop Dogg</div>
                                                             </li>
-                                                            <li> <a onclick="hiphop()" >Hip Hop</a>
+                                                            <li> <a onclick="musicGenre('hiphopOverview')" >Hip Hop</a>
                                                                 <p id="hiphopOverview">Hip hop music is a genre of popular music that developed as part of hip hop culture, a subculture defined by four key stylistic elements: MCing/rapping, DJing/scratching with turntables, break dancing, and graffiti writing. Other elements include sampling beats or bass lines from records (or synthesized beats and sounds), and rhythmic beatboxing.</p>
                                                                 <div onclick="artistLink('https://www.saltnpepa.com/')">Salt-N-Pepa</div>
                                                                 <div onclick="artistLink('https://dougefresh.com/')">Doug E. Fresh</div>
@@ -244,7 +242,7 @@
 </body>
 
 <footer style="background: linear-gradient(salmon, #9313ef);padding: 5px 0;">
-    <a href="#header">back 2 top</a>
+    <p>>>>To include linkedin, github, bandcamp and email<<<</p>
     <p>Copyright © 2022 Nilton Roese</p>
 </footer>
 
