@@ -157,12 +157,13 @@ right connector from last child*/
 
 /* Style the search field */
 form.mainSearch input[type=text] {
-	padding: 10px;
-	font-size: 17px;
-	border: 1px solid grey;
 	float: left;
 	width: 75%;
+	padding: 10px;
 	background: #f1f1f1;
+	font-size: 17px;
+	border: 1px solid grey;
+	
 }
 
 /* Style the submit button */
@@ -206,3 +207,25 @@ form.mainSearch::after {
 	position: absolute;
 	z-index: 1;
 }
+
+/* Style all social media icons */
+
+.fa {
+	/* padding: 20px; */
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	/* border-radius: 50%; */
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Fa-social */
+  .fa-github, .fa-linkedin, .fa-bandcamp, .fa-envelope {
+	color: black;
+  }
+  
