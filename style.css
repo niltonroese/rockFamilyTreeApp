@@ -8,7 +8,7 @@ body,
 html {
 	width: 100%;
 	text-align: center;
-	background: linear-gradient(rgba(245, 245, 245, 0), #9313ef);
+	background: linear-gradient(#decba4, #3e5151);
 }
 
 header {
@@ -173,7 +173,7 @@ form.mainSearch button {
 	float: left;
 	width: 15%;
 	padding: 10px;
-	background: #9313ef;
+	background: grey;
 	color: black;
 	font-size: 17px;
 	border: 1px solid grey;

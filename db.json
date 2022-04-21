@@ -6,44 +6,19 @@
       "id": 1
     },
     {
-      "name": "jason",
-      "favoriteBand": "jason file",
+      "name": "Test name 2",
+      "favoriteBand": "Test band 2",
       "id": 2
     },
     {
-      "name": "john",
-      "favoriteBand": "wasp",
+      "name": "",
+      "favoriteBand": "",
       "id": 3
     },
     {
-      "name": "jessica",
-      "favoriteBand": "foo",
+      "name": "",
+      "favoriteBand": "",
       "id": 4
-    },
-    {
-      "name": "Test name 2",
-      "favoriteBand": "Test band bga",
-      "id": 5
-    },
-    {
-      "name": "Test name 2",
-      "favoriteBand": "Test band 2",
-      "id": 6
-    },
-    {
-      "name": "Test name 2",
-      "favoriteBand": "Test band 2",
-      "id": 7
-    },
-    {
-      "name": "Nilton",
-      "favoriteBand": "bND",
-      "id": 8
-    },
-    {
-      "name": "Nilton",
-      "favoriteBand": "BANDCA",
-      "id": 9
     }
   ]
 }
