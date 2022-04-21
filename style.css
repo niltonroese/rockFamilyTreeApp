@@ -8,11 +8,12 @@ body,
 html {
 	width: 100%;
 	text-align: center;
-	background: linear-gradient(salmon, #9313ef);
+	background: linear-gradient(rgba(245, 245, 245, 0), #9313ef);
 }
 
 header {
 	text-align: center;
+	padding: 15px 0;
 }
 
 .tree ul {
@@ -46,7 +47,7 @@ header {
 	position: absolute;
 	top: 0;
 	right: 50%;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid cyan;
 	width: 50%;
 	height: 20px;
 }
@@ -54,7 +55,7 @@ header {
 .tree li::after {
 	right: auto;
 	left: 50%;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid cyan;
 }
 
 /*We need to remove left-right connectors from elements without 
@@ -78,7 +79,7 @@ right connector from last child*/
 
 /*Adding back the vertical connector to the last nodes*/
 .tree li:last-child::before {
-	border-right: 1px solid #ccc;
+	border-right: 1px solid cyan;
 	border-radius: 0 5px 0 0;
 	-webkit-border-radius: 0 5px 0 0;
 	-moz-border-radius: 0 5px 0 0;
@@ -96,7 +97,7 @@ right connector from last child*/
 	position: absolute;
 	top: 0;
 	left: 50%;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid cyan;
 	width: 0;
 	height: 20px;
 }
@@ -163,6 +164,7 @@ form.mainSearch input[type=text] {
 	background: #f1f1f1;
 	font-size: 17px;
 	border: 1px solid grey;
+	border-radius: 5px 0 0 5px;
 	
 }
 
@@ -171,10 +173,11 @@ form.mainSearch button {
 	float: left;
 	width: 15%;
 	padding: 10px;
-	background: #2196F3;
-	color: white;
+	background: #9313ef;
+	color: black;
 	font-size: 17px;
 	border: 1px solid grey;
+	border-radius: 0 5px 5px 0;
 	border-left: none;
 	/* Prevent double borders */
 	cursor: pointer;
@@ -228,4 +231,20 @@ form.mainSearch::after {
   .fa-github, .fa-linkedin, .fa-bandcamp, .fa-envelope {
 	color: black;
   }
-  
+
+  /* Pop-up */
+
+#popup {
+    background-color: grey;
+    /* border: 1px solid #000; */
+    border-radius: 10px 0 10px 0;
+    -moz-border-radius: 10px 0 10px 0;
+    -webkit-border-radius: 10px 0 10px 0;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
+	z-index: 3;
+	/* display: none; */
+}

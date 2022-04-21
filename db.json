@@ -1,0 +1,34 @@
+{
+  "favoriteArtist": [
+    {
+      "name": "John locke",
+      "favoriteBand": "Pink Floyd",
+      "id": 1
+    },
+    {
+      "name": "",
+      "favoriteBand": {},
+      "id": 2
+    },
+    {
+      "name": "",
+      "favoriteBand": {},
+      "id": 3
+    },
+    {
+      "name": "",
+      "favoriteBand": {},
+      "id": 4
+    },
+    {
+      "name": "",
+      "favoriteBand": {},
+      "id": 5
+    },
+    {
+      "name": "",
+      "favoriteBand": {},
+      "id": 6
+    }
+  ]
+}
