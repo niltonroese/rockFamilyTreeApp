@@ -8,7 +8,7 @@ body,
 html {
 	width: 100%;
 	text-align: center;
-	background: linear-gradient(#decba4, #3e5151);
+	background: #4f6868;
 }
 
 header {
@@ -184,7 +184,7 @@ form.mainSearch button {
 }
 
 form.mainSearch button:hover {
-	background: #0b7dda;
+	opacity: 0.7;
 }
 
 /* Clear floats */
@@ -235,7 +235,7 @@ form.mainSearch::after {
   /* Pop-up */
 
 #popup {
-    background-color: grey;
+    background-color: rgb(155, 154, 154);
     /* border: 1px solid #000; */
     border-radius: 10px 0 10px 0;
     -moz-border-radius: 10px 0 10px 0;
