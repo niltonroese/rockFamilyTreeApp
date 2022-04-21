@@ -1,11 +1,9 @@
 /*Official Website Functions*/
-
 function artistLink(url){
     window.open(url);
 }
 
 /*Genre Buttons*/
-
 function musicGenre(overview){
   const x = document.getElementById(overview);
   if (x.style.display === "block") {
@@ -16,14 +14,6 @@ function musicGenre(overview){
 }
 
 /*Search Button and API Fetch*/
-
-// document.getElementById('search-form').addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   const band = document.getElementById('band-input').value
-//   console.log(band);
-//   window.open('https://google.com', '_blank');
-// })
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -47,6 +37,48 @@ document.getElementById('search-form').addEventListener('submit', (e) => {
   .catch(error => window.alert('There is no such band with this name!'));  
 })
 
+/*Pop-up / Favorite band Json server storing*/
+const artistForm = document.getElementById('artist-form');
+
+let name = document.getElementById('name')
+let favoriteBand = document.getElementById('favoriteBand')
+
+function favoriteArtist(event) {
+  event.preventDefault();
+
+  function hide() {  
+    document.getElementById('popup').style.display = "none";
+  };
+  hide()
+
+  return fetch('http://localhost:3000/favoriteArtist',{
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name.value,
+        favoriteBand: favoriteBand.value
+      })
+    })
+    .catch(error => console.error(error));
+}
+
+artistForm.addEventListener('submit', favoriteArtist);
+
+// onclick="hide()"
+// function hide() {  
+//   document.getElementById('popup').style.display = "none";
+// };
+
+
+
+
+
+
+
+
 /*Fetch Neil Young link try catch await async function*/
 // async function fetchneilYoungAsync() {
 // return fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/1379', options)
@@ -63,28 +95,3 @@ document.getElementById('search-form').addEventListener('submit', (e) => {
 //       window.alert('error');  
 //   }
 // }
-
-/*Pop-up / Favorite band storing*/
-
-function favoriteArtist(name, favoriteBand) {
-  return fetch('http://localhost:3000/favoriteArtist',{
-      method: "POST",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name,
-        favoriteBand
-      })
-    })
-    .then(resp => resp.json())
-    .then(data=> {
-      return data
-    })
-    .catch(error => console.error(error));
-}
-
-function hide() {  
-  document.getElementById('popup').style.display = "none";
-};
