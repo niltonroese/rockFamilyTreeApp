@@ -49,7 +49,7 @@ function favoriteArtist(event) {
   function hide() {  
     document.getElementById('popup').style.display = "none";
   };
-  hide()
+  hide();
 
   return fetch('http://localhost:3000/favoriteArtist',{
       method: "POST",
@@ -67,10 +67,9 @@ function favoriteArtist(event) {
 
 artistForm.addEventListener('submit', favoriteArtist);
 
-// onclick="hide()"
-// function hide() {  
-//   document.getElementById('popup').style.display = "none";
-// };
+setTimeout(function(){
+  document.getElementById('popup').style.visibility = "visible";
+  },5000);
 
 
 
@@ -78,6 +77,47 @@ artistForm.addEventListener('submit', favoriteArtist);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 /*Fetch Neil Young link try catch await async function*/
 // async function fetchneilYoungAsync() {

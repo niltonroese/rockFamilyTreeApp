@@ -235,8 +235,8 @@ form.mainSearch::after {
   /* Pop-up */
 
 #popup {
-    background-color: rgb(155, 154, 154);
-    /* border: 1px solid #000; */
+    background: linear-gradient(#d2ccc4, #2f4353);
+	color: black;
     border-radius: 10px 0 10px 0;
     -moz-border-radius: 10px 0 10px 0;
     -webkit-border-radius: 10px 0 10px 0;
@@ -246,5 +246,5 @@ form.mainSearch::after {
     transform: translate(-50%, -50%);
     width: 33%;
 	z-index: 3;
-	/* display: none; */
+	visibility: hidden;
 }
