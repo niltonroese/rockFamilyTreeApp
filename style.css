@@ -235,7 +235,7 @@ form.mainSearch::after {
   /* Pop-up */
 
 #popup {
-    background: linear-gradient(#d2ccc4, #2f4353);
+    background: linear-gradient(#4f6868, #decba4, #4f6868);
 	color: black;
     border-radius: 10px 0 10px 0;
     -moz-border-radius: 10px 0 10px 0;
