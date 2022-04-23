@@ -233,10 +233,10 @@ form.mainSearch::after {
   }
 
   /* Pop-up */
-
 #popup {
     background: linear-gradient(#4f6868, #decba4, #4f6868);
 	color: black;
+	border: 1px solid grey;
     border-radius: 10px 0 10px 0;
     -moz-border-radius: 10px 0 10px 0;
     -webkit-border-radius: 10px 0 10px 0;
@@ -248,3 +248,14 @@ form.mainSearch::after {
 	z-index: 3;
 	visibility: hidden;
 }
+
+/* Like button */
+#likeMe {
+	padding: 3px;
+	margin-bottom: 5px;
+	background: linear-gradient(#4f6868, #decba4, #4f6868);
+	font-size: larger;
+	border: 1px solid grey;
+	border-radius: 10px 0 10px 0;
+	color: black
+  }

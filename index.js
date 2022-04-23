@@ -71,6 +71,19 @@ setTimeout(function(){
   document.getElementById('popup').style.visibility = "visible";
   },5000);
 
+/*Like Button with NO count*/
+var button = document.getElementById('likeMe');
+button.onclick = function() {
+  button.innerHTML = `<i class="fa fa-hand-peace-o" style="font-size:18px"></i>`;
+};
+
+/*Like Button with count*/
+// var button = document.getElementById('likeMe'),
+//   count = 0;
+// button.onclick = function() {
+//   count += 1;
+//   button.innerHTML = `<i class="fa fa-hand-peace-o" style="font-size:24px"></i>${count} likes`;
+// };
 
 
 
@@ -106,18 +119,6 @@ setTimeout(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
 
 /*Fetch Neil Young link try catch await async function*/
 // async function fetchneilYoungAsync() {

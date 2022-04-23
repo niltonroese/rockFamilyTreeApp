@@ -9,6 +9,16 @@
       "name": "Test name 2",
       "favoriteBand": "Test band 2",
       "id": 2
+    },
+    {
+      "name": "",
+      "favoriteBand": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "favoriteBand": "",
+      "id": 4
     }
   ]
 }
