@@ -104,7 +104,7 @@ right connector from last child*/
 
 .tree li a {
 	border: 1px solid #ccc;
-	padding: 5px 10px;
+	padding: 1px 10px;
 	text-decoration: none;
 	color: black;
 	font-size: 24px;
@@ -236,10 +236,10 @@ form.mainSearch::after {
 #popup {
     background: linear-gradient(#4f6868, #decba4, #4f6868);
 	color: black;
-	border: 1px solid grey;
-    border-radius: 10px 0 10px 0;
-    -moz-border-radius: 10px 0 10px 0;
-    -webkit-border-radius: 10px 0 10px 0;
+	/* border: 1px solid grey; */
+	border-radius: 5px 20px 5px;
+	-webkit-border-radius: 5px 20px 5px;
+	-moz-border-radius: 5px 20px 5px;
 	position: fixed;
     top: 50%;
     left: 50%;
@@ -256,6 +256,8 @@ form.mainSearch::after {
 	background: linear-gradient(#4f6868, #decba4, #4f6868);
 	font-size: larger;
 	border: 1px solid grey;
-	border-radius: 10px 0 10px 0;
-	color: black
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	color: black;
   }
