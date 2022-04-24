@@ -12,8 +12,11 @@ html {
 }
 
 header {
+	position: fixed;
+	z-index: 3;
+	width: 100%;
 	text-align: center;
-	padding: 5px 0;
+	padding: 5px 0;;
 }
 
 .tree ul {
