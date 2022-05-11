@@ -64,10 +64,9 @@ function favoriteArtist(event) {
     })
     .catch(error => console.error(error));
 }
+  artistForm.addEventListener('submit', favoriteArtist);
 
-artistForm.addEventListener('submit', favoriteArtist);
-
-setTimeout(function(){
+  setTimeout(function(){
   document.getElementById('popup').style.visibility = "visible";
   },5000);
 
@@ -85,9 +84,19 @@ button.onclick = function() {
 //   button.innerHTML = `<i class="fa fa-hand-peace-o" style="font-size:24px"></i>${count} likes`;
 // };
 
-
-
-
+/*Coding Challenge - Extracting data from Json server, including as a table on html*/
+// fetch('http://localhost:3000/favoriteArtist')
+//   .then(resp => resp.json())
+//   // .then(json => console.log(json))
+//   .then(data => {
+//     for (let i = 0; i < data.length; i++) {
+//       const table = document.getElementById('jsonData');
+//       const tableTr = document.createElement('tr');
+//       tableTr.innerHTML = `<td>${data[i]['name']}</td><td>${data[i]['favoriteBand']}</td>`
+//       table.append(tableTr)
+//   }})
+//     // console.log(data)})
+//   .catch(error => window.alert('Error'));
 
 
 

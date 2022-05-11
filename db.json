@@ -6,39 +6,34 @@
       "id": 1
     },
     {
-      "name": "Test name 2",
-      "favoriteBand": "Test band 2",
+      "name": "Andrew",
+      "favoriteBand": "Led Zep",
       "id": 2
-    },
-    {
-      "name": "",
-      "favoriteBand": "",
-      "id": 3
-    },
-    {
-      "name": "",
-      "favoriteBand": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "favoriteBand": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "favoriteBand": "",
-      "id": 6
-    },
-    {
-      "name": "",
-      "favoriteBand": "",
-      "id": 7
     },
     {
       "name": "Nilton",
       "favoriteBand": "Pink Floyd",
       "id": 8
+    },
+    {
+      "name": "Allan Today",
+      "favoriteBand": "Band today",
+      "id": 9
+    },
+    {
+      "name": "nilton",
+      "favoriteBand": "queen",
+      "id": 10
+    },
+    {
+      "name": "nilton",
+      "favoriteBand": "queen",
+      "id": 11
+    },
+    {
+      "name": "Test Andre",
+      "favoriteBand": "Test band",
+      "id": 12
     }
   ]
 }
